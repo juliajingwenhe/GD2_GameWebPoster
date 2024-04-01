@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vanishing at Verdant Villa</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dye3fkx.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vbp2put.css">
+</head>
+<body>
+    <div id="home-page" class="page active">
+        <div id="cover-background"></div> 
+        <audio id="background-music" loop>
+            <source src="audio/bg music.mp3" type="audio/mp3"> 
+        </audio>
+        <button class="music-btn" onclick="toggleMusic()">Play Music</button>
+        <h1>The Vanishing at Verdant Villa</h1>
+        <button id="start-btn" class="start-btn">Start</button>
+        <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+    </div>
+
+    <div id="intro-page" class="page">
+        <div id="story-background"></div>
+        <div class="content">
+            <h2>--INTRO--</h2>
+            <p>The bustling city of New Gales, known for its blend of old wealth and modern innovation, is shaken by the mysterious disappearance of Adrian Huxley, a tech mogul last seen at his lavish gala at Verdant Villa. You are tasked with solving the case as a detective, navigating through a labyrinth of secrets and lies.</p>
+        </div>
+            <button id="act1-btn" class="act1-btn">Begin Act 1</button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+        
+    </div>
+
+    <div id="act1-page" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h3>ACT 1: The Gala Night</h3>
+            <p>You arrive under the velvet night sky. The villa, an imposing structure of old stone and sprawling gardens, buzzes with anxious guests and loyal staff, all under the watchful eyes of the local police.</p>
+        </div>
+            <button id="choice-btn" class="act1-btn" onclick="goToAct2A('choiceA')">Interview the Staff</button>
+            <button id="choice-btn" class="act1-btn2" onclick="goToAct2B('choiceB')">Start with the Guests</button>
+            <audio id="choice-clickSound" src="audio/choice.mp3" preload="auto"></audio>
+         
+    </div>
+
+    <div id="act2-pageA" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h3>ACT 2: Gathering Clues</h3>
+            <p>You starts with the villa's staff, uncovering a complex web of relationships and a glimpse into Huxley's private life. A suspicious exchange between the butler and the gardener catches Reynard's attention.</p>
+        </div>
+            <button id="choice-btn" class="act1-btn" onclick="goToA1('choiceA1')">Inspect the Security Footage</button>
+            <button id="choice-btn" class="act1-btn2" onclick="goToB1('choiceB1')"> Check Huxley's Personal Office</button>
+            <audio id="choice-clickSound" src="audio/choice.mp3" preload="auto"></audio>
+        
+    </div>
+
+    <div id="choice-A1" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h4>You choose to inspect the security footage</h4>
+            <p>The footage reveals a shadowy figure tampering with cameras before Huxley's last known appearance. The timestamp leads you to question the alibis of key suspects.</p>
+        </div>
+            <button id="act3-btn1" class="act1-btn" >Begin Act 3</button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+        
+    </div>
+
+    <div id="choice-B1" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h4>You choose to Check Huxley's Personal Office</h4>
+            <p>Huxley's office, a sanctum of personal and professional secrets, holds a hidden compartment with encrypted files hinting at a groundbreaking tech discovery.</p>
+        </div>
+            <button id="act3-btn2" class="act1-btn2">Begin Act 3</button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+        
+    </div>
+
+    <div id="act2-pageB" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h3>ACT 2: Gathering Clues</h3>
+            <p>Opting to dive into the glittering throng of guests, you encounter a spectrum of society—from the envious business partner to the scorned ex-lover. Huxley's rival, Marcus Dell, makes a veiled threat about the missing mogul's fate.</p>
+        </div>
+            <button id="choice-btn" class="act1-btn" onclick="goToA2('choiceA2')">Talk to Huxley's Business Partner</button>
+            <button id="choice-btn" class="act1-btn2" onclick="goToB2('choiceB2')"> Interrogate Huxley's Rival</button>
+            <audio id="choice-clickSound" src="audio/choice.mp3" preload="auto"></audio>
+       
+    </div>
+
+    <div id="choice-A2" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h4>You choose to Talk to Huxley's Business Partner</h4>
+            <p>The partner, Evelyn Shaw, reveals financial strains and hints at a secret that could change everything. Her nervous glance towards the villa's east wing suggests a hidden aspect of the villa yet unexplored.</p>
+        </div>
+            <button id="act3-btn3" class="act1-btn">Begin Act 3</button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+        
+    </div>
+
+    <div id="choice-B2" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h4>You choose to Interrogate Huxley's Rival</h4>
+            <p>Marcus Dell boasts about his forthcoming victory over Huxley, inadvertently revealing knowledge of a secret project that could have motivated the disappearance.</p>
+        </div>
+            <button id="act3-btn4" class="act1-btn2">Begin Act 3</button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+        
+    </div>
+
+    <div id="act3-page" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h3>ACT 3: The Turning Point</h3>
+            <p>A torn page from Huxley's journal, found by you, suggests the mogul feared for his life over something called "Project Phoenix." The detective must decide how to use this information.</p>
+        </div>
+            <button id="choice-btn" class="act1-btn" onclick="goToA3('choiceA3')">Confront a Suspect with the Evidence</button>
+            <button id="choice-btn" class="act1-btn2" onclick="goToB3('choiceB3')"> Dig Deeper into the Evidence's Origin</button>
+            <audio id="choice-clickSound" src="audio/choice.mp3" preload="auto"></audio>
+        
+    </div>
+
+    <div id="choice-A3" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h4>You choose to Confront a Suspect with the Evidence</h4>
+            <p>Choosing a suspect based on current evidence leads you to confront Evelyn Shaw, who breaks down and reveals her role in Project Phoenix, claiming it was worth killing for.</p>
+        </div>
+            <button id="act4-btn1" class="act1-btn" >Begin Final Act</button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+       
+    </div>
+
+    <div id="choice-B3" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h4>You choose to Dig Deeper into the Evidence's Origin</h4>
+            <p>Investigating the origin of the journal page, you discover a hidden lab beneath the villa, unveiling the true scope of Project Phoenix and its potential to change the world—or destroy it.</p>
+        </div>
+            <button id="act4-btn2" class="act1-btn2">Begin Final Act </button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+       
+    </div>
+
+    <div id="act4-page" class="page">
+        <div id="story-background"></div>
+        <div class="content1">
+            <h3>ACT 4: The Confrontation</h3>
+            <p>With the pieces of the puzzle falling into place, you face a critical decision in the shadowed halls of Verdant Villa.</p>
+        </div>
+            <button id="choice-btn" class="act1-btn" onclick="goToA4('choiceA4')">Accuse the Most Likely Suspect</button>
+            <button id="choice-btn" class="act1-btn2" onclick="goToB4('choiceB4')">Set a Trap to Catch the Real Culprit</button>
+            <audio id="choice-clickSound" src="audio/choice.mp3" preload="auto"></audio>
+       
+    </div>
+
+    <div id="choice-A4" class="page">
+        <div id="story-background"></div>
+        <div class="content3">
+            <h2>--Final reveal--</h2>
+            <p>Based on the overwhelming evidence, you accuse Marcus Dell, leading to a dramatic confrontation in which Dell reveals his twisted motivations but also implicates another surprising figure.</p>
+        </div>
+            <button id="epilogue1" class="act1-btn" >Epilogue</button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+    
+    </div>
+
+    <div id="choice-B4" class="page">
+        <div id="story-background"></div>
+        <div class="content3">
+            <h2>--Final reveal--</h2>
+            <p>Using themselves as bait, you set a trap, exposing the true mastermind behind the disappearance, leading to a shocking revelation that ties back to the very beginnings of Verdant Villa's history.</p>
+        </div>
+            <button id="epilogue2" class="act1-btn2">Epilogue</button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+       
+    </div>
+
+    <div id="epilogue-page" class="page">
+        <div id="bcover-background"></div>
+        <div class="content2">
+            <h5>Epilogue</h5>
+            <p>As dawn breaks over Verdant Villa, the case of Adrian Huxley's disappearance reaches its conclusion. The detective's choices have unraveled a story of ambition, betrayal, and innovation gone awry.
+            <br><br>
+                If your accusations were correct, the culprit faces justice, and Huxley's legacy is secured. Project Phoenix, a revolutionary energy source, is revealed to the world, changing the course of human history. 
+            <br><br>
+                If you misjudged, the real culprit remains at large, leaving a shadow over New Gales. However, your efforts uncover enough evidence to ensure a continued investigation, promising eventual justice.
+            <br><br>
+                Detective stands in the quiet aftermath, reflecting on the nature of truth and the cost of progress. The story of Verdant Villa becomes a legend, whispered in the halls of New Gales, a stark reminder of the thin line between genius and madness.
+            <br><br>
+                The Vanishing at Verdant Villa leaves players pondering the impact of their decisions, the unseen currents beneath the surface of society, and the eternal question of what lies in the dark heart of ambition.   
+            </p>
+             <h6>--THE END--</h6>
+            <button id="restart-btn" class="restart-btn">Home</button>
+            <audio id="start-clickSound" src="audio/start.mp3" preload="auto"></audio>
+        </div>
+    </div>
+
+
+    
+    <script src="javascript/js.js"></script>
+</body>
+</html></div>

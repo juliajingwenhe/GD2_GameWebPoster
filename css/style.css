@@ -1,0 +1,368 @@
+body {
+    background-color:rgb(28, 28, 28);
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: none;
+}
+
+#home-page {
+    position: relative;
+    width: 100%; 
+    height: 100vh; 
+    padding: 50px;
+    text-align: center;
+    
+}   
+
+.page.active {
+    display: block;
+    opacity: 1;
+}
+
+#cover-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg1.jpeg"); 
+    background-size: cover; 
+    background-position: center; 
+    z-index: -1; 
+}
+
+.music-btn {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: rgb(255, 243, 174);
+    background-color: rgb(42, 41, 41);
+    border: none;
+    cursor: pointer;
+    font-family: "nelson-engraved", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.music-btn:hover {
+    color:white;
+    transform: scale(1.1); 
+    transition: transform 0.4s ease-in-out; 
+}
+
+h1{
+    font-family: "nelson-engraved", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 243, 174);
+    font-size: 4em;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+h1:hover {
+    transform: scale(1.1); 
+    transition: transform 0.4s ease-in-out; 
+}
+
+
+.start-btn{
+    font-size: 3em;
+    display: inline-block;
+    background-color:rgb(44, 43, 43);
+    color:  #ff6f61;
+    padding: 10px 15px;
+    margin: 5px; 
+    cursor: pointer;
+    text-align: center;
+    font-family: nelson-rugged, sans-serif;
+font-style: normal;
+font-weight: 400;
+        
+}
+
+.start-btn:hover{
+    background-color: #ff6f61;
+    color: white;
+    transform: scale(1.1); 
+    transition: transform 0.4s ease-in-out; 
+}
+
+/* intro page */
+
+.page {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#story-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg2.jpeg"); 
+    background-size: cover; 
+    background-position: center; 
+    z-index: -1; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2{
+    font-family: "nelson-engraved", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(42, 41, 41);
+    font-size: 3em;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.page .content p{
+    font-family: "nelson-rugged", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(19, 19, 19);
+    font-size: 2em;
+    padding: 50px;
+    text-align: center;
+    width: 60%; /* Adjust this value as needed */
+    margin-top: 10px; 
+}
+
+.act1-btn{
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(255, 243, 174);
+    background-color: rgb(42, 41, 41);
+    border: none;
+    cursor: pointer;
+    font-family: "nelson-engraved", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.act1-btn:hover {
+    background-color:  #ff6f61 ;
+    color: rgb(255, 255, 255);
+    transform: scale(1.1); 
+    transition: transform 0.4s ease-in-out; 
+}
+
+.act1-btn2{
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(255, 243, 174);
+    background-color: rgb(42, 41, 41);
+    border: none;
+    cursor: pointer;
+    font-family: "nelson-engraved", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.act1-btn2:hover {
+    background-color: #0056b3;
+    color: rgb(255, 255, 255);
+    transform: scale(1.1); 
+    transition: transform 0.4s ease-in-out; 
+}
+
+
+/* act 1 page */
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+h3{
+    font-family: "carta-marina", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(42, 41, 41);
+    font-size: 3em;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.page .content1 p{
+    font-family: "carta-marina", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(19, 19, 19);
+    font-size: 2em;
+    padding: 50px;
+    text-align: left;
+    width: 60%; /* Adjust this value as needed */
+    margin-top: 10px; 
+    
+    
+}
+
+/*choice page*/
+
+h4{
+    font-family: "nelson-rugged", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(42, 41, 41);
+    font-size: 2em;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.page .content3 p{
+    font-family: "nelson-rugged", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(19, 19, 19);
+    font-size: 2em;
+    padding: 50px;
+    text-align: center;
+    width: 60%; /* Adjust this value as needed */
+    margin-top: 10px; 
+}
+
+
+
+/* epilogue page */
+
+#epilogue-page{
+    position: relative;
+    width: 100%; 
+    height: 100vh; 
+    padding: 50px;
+    text-align: center;
+}
+
+h5{
+    font-family: "nelson-engraved", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 243, 174);
+    font-size: 3em;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.page .content2 p{
+    font-family: "carta-marina", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(255, 243, 174) ;
+    font-size: 1.3em;
+    text-align: left;
+    width: 60%; /* Adjust this value as needed */
+    padding: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+h6{
+    font-family: "nelson-engraved", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 243, 174);
+    font-size: 2em; 
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0%;
+}
+
+
+.restart-btn{
+    font-size: 1.5em;
+    background-color:rgb(42, 41, 41);
+    color:  #ff6f61;
+    cursor: pointer;
+    font-family:"carta-marina", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.restart-btn:hover{
+    background-color: #ff6f61;
+    color: white;
+    transform: scale(1.1); 
+    transition: transform 0.4s ease-in-out; 
+}
+
+#bcover-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg1.jpeg"); 
+    background-size: cover; 
+    background-position: center; 
+    z-index: -1; 
+}
+
+
+
+
